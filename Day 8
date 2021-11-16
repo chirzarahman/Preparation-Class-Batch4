@@ -1,0 +1,30 @@
+Jabarkan dan jelaskan langkah-langkah untuk generate SSH Key:
+
+Masuk ke direktori folder .ssh, jalankan di terminal
+"cd ./.ssh"
+
+Membuat Key SSH
+"ssh-keygen"
+
+Jalankan SSH Agen dan Load SSH Key
+"ps -e | grep [s]sh-agent"
+
+Tapi, kalau belum berjalan, gunakan perintah berikut ini untuk menjalankan SSH agent:
+"ssh-agent /bin/bash"
+
+Berikutnya kita Load SSH Key, Gunakan perintah.
+"ssh-add ~/.ssh/id_anda"
+
+Sebelumnya ambil dulu kunci publik yang sudah anda buat, gunakan perintah cat.
+"cat ~/.ssh/id_anda.pub"
+
+Copy semua teks yang ditampilkan, seperti contoh dibawah.
+"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDUvC56c2vjokOkhLqZoIHZSWfWYX+WYX3PyeFQfg5EerBc+nMftT59v/64JWn4OJbipgKZlJhjZU6G4Y3Ybdm+JgocBK5vCim/1WxsdXGVPc4UeVKXjkyEO1710ycHqgMkvgAFo9essucL2WJgt5G0cAH+2P/epRhrsnoZhrMom1bkHcXCPxcinPE3snf7lrekqp0uR/WvtkfpMykUqKYqB6wqVvEyP9XUcNeUqN/gSS0YaYPaWdz7pzmocT9VN1eBUxOXcwXHub/Avl+2rVVBNKznTsMmLpC6JL3/bWQ66jhLIsOfoyWeNB42FfmsO2anC+tpPPdPTbbteRnhTRqPaE/z6oW7L5zFz6CHoF8/vzaIEtDIYC7kzyThYsz76QyieG5Y3go7jPHHtBcBXYGcaBiXRzD9qeN6lDH2TEIbnhYM8f/iPlARLzHhini0bsbLFQrVcSP47fEIbjGIX9OX6wHPesH/zqD4gHDT1d5KjjxAXkeT8eF8kFidlp8x6+s= asusrog@gl-503-ge"
+
+Lalu buka profile github anda dan masuk Settings>SSH and GPG Keys, lalu paste teks yang sudah dicopy.
+
+Lalu ketik perintah berikut di terminal vscode/code editor anda untuk menggant giti remote dengan berikut.
+"git remote set-url origin <link repo ssh git@github.com>"
+
+Terakhir kita push.
+"git push origin master"
