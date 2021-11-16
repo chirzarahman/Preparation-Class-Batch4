@@ -1,30 +1,41 @@
 Jabarkan dan jelaskan langkah-langkah untuk generate SSH Key:
 
-Masuk ke direktori folder .ssh, jalankan di terminal
-"cd ./.ssh"
+    Masuk ke direktori folder .ssh, jalankan di terminal
+    "cd ./.ssh"
 
-Membuat Key SSH
-"ssh-keygen"
+    Membuat Key SSH
+    "ssh-keygen"
 
-Jalankan SSH Agen dan Load SSH Key
-"ps -e | grep [s]sh-agent"
+    Jalankan SSH Agen dan Load SSH Key
+    "ps -e | grep [s]sh-agent"
 
-Tapi, kalau belum berjalan, gunakan perintah berikut ini untuk menjalankan SSH agent:
-"ssh-agent /bin/bash"
+    Tapi, kalau belum berjalan, gunakan perintah berikut ini untuk menjalankan SSH agent:
+    "ssh-agent /bin/bash"
 
-Berikutnya kita Load SSH Key, Gunakan perintah.
-"ssh-add ~/.ssh/id_anda"
+    Berikutnya kita Load SSH Key, Gunakan perintah.
+    "ssh-add ~/.ssh/id_anda"
 
-Sebelumnya ambil dulu kunci publik yang sudah anda buat, gunakan perintah cat.
-"cat ~/.ssh/id_anda.pub"
+    Sebelumnya ambil dulu kunci publik yang sudah anda buat, gunakan perintah cat.
+    "cat ~/.ssh/id_anda.pub"
 
-Copy semua teks yang ditampilkan, seperti contoh dibawah.
-"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDUvC56c2vjokOkhLqZoIHZSWfWYX+WYX3PyeFQfg5EerBc+nMftT59v/64JWn4OJbipgKZlJhjZU6G4Y3Ybdm+JgocBK5vCim/1WxsdXGVPc4UeVKXjkyEO1710ycHqgMkvgAFo9essucL2WJgt5G0cAH+2P/epRhrsnoZhrMom1bkHcXCPxcinPE3snf7lrekqp0uR/WvtkfpMykUqKYqB6wqVvEyP9XUcNeUqN/gSS0YaYPaWdz7pzmocT9VN1eBUxOXcwXHub/Avl+2rVVBNKznTsMmLpC6JL3/bWQ66jhLIsOfoyWeNB42FfmsO2anC+tpPPdPTbbteRnhTRqPaE/z6oW7L5zFz6CHoF8/vzaIEtDIYC7kzyThYsz76QyieG5Y3go7jPHHtBcBXYGcaBiXRzD9qeN6lDH2TEIbnhYM8f/iPlARLzHhini0bsbLFQrVcSP47fEIbjGIX9OX6wHPesH/zqD4gHDT1d5KjjxAXkeT8eF8kFidlp8x6+s= asusrog@gl-503-ge"
+    Copy semua teks yang ditampilkan, seperti contoh dibawah.
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDUvC56c2vjokOkhLqZoIHZSWfWYX+WYX3PyeFQfg5EerBc+nMftT59v/64JWn4OJbipgKZlJhjZU6G4Y3Ybdm+JgocBK5vCim/1WxsdXGVPc4UeVKXjkyEO1710ycHqgMkvgAFo9essucL2WJgt5G0cAH+2P/epRhrsnoZhrMom1bkHcXCPxcinPE3snf7lrekqp0uR/WvtkfpMykUqKYqB6wqVvEyP9XUcNeUqN/gSS0YaYPaWdz7pzmocT9VN1eBUxOXcwXHub/Avl+2rVVBNKznTsMmLpC6JL3/bWQ66jhLIsOfoyWeNB42FfmsO2anC+tpPPdPTbbteRnhTRqPaE/z6oW7L5zFz6CHoF8/vzaIEtDIYC7kzyThYsz76QyieG5Y3go7jPHHtBcBXYGcaBiXRzD9qeN6lDH2TEIbnhYM8f/iPlARLzHhini0bsbLFQrVcSP47fEIbjGIX9OX6wHPesH/zqD4gHDT1d5KjjxAXkeT8eF8kFidlp8x6+s= asusrog@gl-503-ge"
 
-Lalu buka profile github anda dan masuk Settings>SSH and GPG Keys, lalu paste teks yang sudah dicopy.
+    Lalu buka profile github anda dan masuk Settings>SSH and GPG Keys, lalu paste teks yang sudah dicopy.
 
-Lalu ketik perintah berikut di terminal vscode/code editor anda untuk menggant giti remote dengan berikut.
-"git remote set-url origin <link repo ssh git@github.com>"
+    Lalu ketik perintah berikut di terminal vscode/code editor anda untuk menggant giti remote dengan berikut.
+    "git remote set-url origin <link repo ssh git@github.com>"
 
-Terakhir kita push.
-"git push origin master"
+    Terakhir kita push.
+    "git push origin master"
+
+Jabarkan dan jelaskan masing-masing Extensions (Flutter):
+
+    1. Pubspec assist = Untuk memudahkan kita menambah dependencies di pubspec.yaml
+    2. Bracket Pair Colorizer 2 = Ekstensi ini memudahkan untuk menemukan pasangan braket dengan memberi kode warna.
+    3. Prettier - Code Formatter = Untuk merapikan code yang tidak berurutan.
+    4. Awesome Flutter Snippets = Memudahkan dalam pembuatan widget, dengan mengetikkan masing-masing singkatannya.
+    5. Flutter Color = Memudahkan pengguna untuk menentukan colors (Color Picker).
+    6. Dart = Untuk bahasa pemrograman Dart, dan menyediakan alat untuk secara efektif mengedit, memfaktorkan ulang, menjalankan, dan memuat ulang aplikasi seluler Flutter, dan aplikasi web AngularDart.
+    7. Flutter = Untuk mengedit, memfaktorkan ulang, menjalankan, dan memuat ulang aplikasi seluler Flutter secara efektif, serta dukungan untuk bahasa pemrograman Dart.
+    8. Material Icon Theme = Mengubah icon IDE VS code menjadi colorfull.
