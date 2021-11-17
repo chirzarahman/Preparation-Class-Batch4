@@ -1,0 +1,5 @@
+1. CTRL + Shift P = Untuk menampilkan command pallete
+2. CTRL + F = Untuk memudahkan pencarian text code
+3. CTRL + Space = Untuk membantu kita jika kita lupa kode apa yang akan kita gunakan selanjutnya
+4. CTRL + / = Untuk mengkomen code kita agar tidak ikut tereksekusi
+5. CTRL + Shift + / = Kebalikan dari ctrl + / (yaitu meng Uncomment code kita)
