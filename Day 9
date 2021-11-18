@@ -1,5 +1,29 @@
-1. CTRL + Shift P = Untuk menampilkan command pallete
-2. CTRL + F = Untuk memudahkan pencarian text code
-3. CTRL + Space = Untuk membantu kita jika kita lupa kode apa yang akan kita gunakan selanjutnya
-4. CTRL + / = Untuk mengkomen code kita agar tidak ikut tereksekusi
-5. CTRL + Shift + / = Kebalikan dari ctrl + / (yaitu meng Uncomment code kita)
+1. CTRL + Shift P = Untuk menampilkan command pallete.
+2. CTRL + F = Untuk memudahkan pencarian text code.
+3. CTRL + Space = Untuk membantu kita jika kita lupa kode apa yang akan kita gunakan selanjutnya.
+4. CTRL + / = Untuk mengkomen code kita agar tidak ikut tereksekusi.
+5. CTRL + Shift + / = Kebalikan dari ctrl + / (yaitu meng Uncomment code kita).
+
+
+Jelaskan perbedaan penggunaan pada Trello vs Jira vs You Track.
+
+    Trello :
+        1. Jika salah satu tim anda melakukan perubahan pada fitur cards, maka perubahan tersebut juga dapat dilihat oleh siapapun dalam tim tersebut tanpa perlu menunggu.
+        2. Mempunyai kemudahan dalam menambah dan mengurangi jumlah anggota tim dalam suatu proyek.
+        3. Memiliki desain yang responsif dan mendukung tampilan yang mobile friendly.
+        4. Mempunyai sistem notifikasi yang baik untuk mempermudah dalam proses komunikasi antar tiap divisi.
+        5. Tidak memerlukan tambahan aplikasi atau tools untuk mengirimkan dokumen atau menulis catatan tambahan pada proyek yang dikerjakan.
+
+    Jira :
+        1. Adanya template untuk mempermudah pemberian tugas.
+        2. Dukungan komunitas dan pelatihan yang mumpuni.
+        3. Mudah digunakan dan intuitif.
+
+    You Track :
+        1. Menemukan kueri berbasis insiden dengan pelengkapan otomatis.
+        2. Penanganan insiden batch.
+        3. Kustomisasi semua atribut masalah.
+        4. Pembuatan alur kerja kustom.
+
+Dari ketinganya temen-temen pilih apa?
+Jawab : Trello.
